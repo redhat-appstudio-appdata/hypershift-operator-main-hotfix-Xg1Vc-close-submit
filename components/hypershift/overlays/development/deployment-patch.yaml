@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hypershift
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/crt-redhat-acm-tenant/hypershift-operator-main-hotfix/hypershift@sha256:a57ce8d1bba235b6e55294a58bb17bdcf47b684e5657e5964be03b3bbbcd6683
+        name: container-image
+        resources: {}
+status: {}
